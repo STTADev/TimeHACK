@@ -15,6 +15,7 @@ TimeHACK is currently being developed in Microsoft Visual Studio 2017. Visual St
 
 Load the ``.sln`` project file into Visual Studio and compile. No further steps are required. This list may grow in the future.
 
+Please note: if you would like to develop TimeHTML, you're free to, as TimeHTML is open-source. However, you'll need knowledge of HTML, C#, and WinForms.
 ## Links
 TimeHACK has a forum at https://www.ashifter.ml/timehack/forum
 

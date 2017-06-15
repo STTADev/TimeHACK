@@ -99,9 +99,11 @@ namespace TimeHACK.OS.Win95.Win95Apps
             {
                 case "www.google.com":
                     hidePrograms();
+                    webBrowser1.DocumentText = resources.GetString("google_HTML");
                     break;
                 case "www.google.stanford.edu":
                     hidePrograms();
+                    webBrowser1.DocumentText = resources.GetString("prototype_HTML");
                     break;
                 case "www.alpha.google.com":
                     hidePrograms();
@@ -109,12 +111,14 @@ namespace TimeHACK.OS.Win95.Win95Apps
                     googlealpha.Show();
                     break;
                 case "www.12padams.com":
+                    hidePrograms();
                     Story.Hack1 startStory = new Story.Hack1();
                     startStory.startObjective();
-                    hidePrograms();
+                    webBrowser1.DocumentText = resources.GetString("padams_HTML");
                     break;
                 case "www.microsoft.com/internetexplorer4/welcome":
                     hidePrograms();
+                    webBrowser1.DocumentText = resources.GetString("ie4start_HTML");
                     break;
                 case "www.???.com":
                     hidePrograms();
@@ -148,6 +152,7 @@ namespace TimeHACK.OS.Win95.Win95Apps
             }
 
             addressbar.Text = url;
+            currentsite = webBrowser1.Document;
         }
 
         private void BackButton_Click(object sender, EventArgs e)
